@@ -348,3 +348,18 @@ color: #777777;
 	margin: auto;
 	color: #4E4E4E;
   }
+
+ .footer{
+	background: #22353F;
+	padding: 20px 0px;
+	text-align: center;
+	margin: 0px;
+  }
+  .footer p{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 26px;
+	color: #AEAEAE;
+  }
