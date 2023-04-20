@@ -1,0 +1,350 @@
+.header-fixed {
+	
+    background: rgba(94, 93, 88, 0.6);
+	box-shadow:0 1px 1px #ccc;
+	padding: 20px 40px;
+	height: 80px;
+	color: #ffffff;
+	box-sizing: border-box;
+	top:-100px;
+
+	-webkit-transition:top 0.3s;
+	transition:top 0.3s;
+}
+
+.header-fixed .header-limiter {
+	max-width: 1200px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+
+.header-fixed-placeholder{
+	height: 80px;
+	display: none;
+}
+
+/* Logo */
+
+.header-fixed .header-limiter h1 {
+	float: left;
+	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	margin: 0;
+    width: 150px !important;
+}
+
+.header-fixed .header-limiter h1 span {
+	color: #5383d3;
+}
+
+.header-fixed img{
+    width: 150px;
+    margin-top: -20px;
+}
+/* The navigation links */
+
+.header-fixed .header-limiter a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.header-fixed .header-limiter nav {
+	font:16px Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	float: right;
+}
+
+.header-fixed .header-limiter nav a{
+	display: inline-block;
+	padding: 0 5px;
+	text-decoration:none;
+	color: #ffffff;
+	opacity: 0.9;
+}
+
+.header-fixed .header-limiter nav a:hover{
+	opacity: 1;
+}
+
+.header-fixed .header-limiter nav a.selected {
+	color: #18CFAB	;
+	pointer-events: none;
+	opacity: 1;
+}
+
+/* Fixed version of the header */
+
+body.fixed .header-fixed {
+	padding: 10px 40px;
+	height: 50px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+body.fixed .header-fixed-placeholder {
+	display: block;
+}
+
+body.fixed .header-fixed .header-limiter h1 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+body.fixed .header-fixed .header-limiter nav {
+	line-height: 28px;
+	font-size: 13px;
+}
+
+
+/* Making the header responsive */
+
+@media all and (max-width: 600px) {
+
+	.header-fixed {
+		padding: 20px 0;
+		height: 75px;
+	}
+
+	.header-fixed .header-limiter h1 {
+		float: none;
+		margin: -8px 0 10px;
+		text-align: center;
+		font-size: 24px;
+		line-height: 1;
+	}
+
+	.header-fixed .header-limiter nav {
+		line-height: 1;
+		float:none;
+	}
+
+	.header-fixed .header-limiter nav a {
+		font-size: 13px;
+	}
+
+	body.fixed .header-fixed {
+		display: none;
+	}
+
+}
+
+
+
+.section2{
+	background-repeat: no-repeat;
+    background-image: url('./images/Layer\ 1\ 5.png');
+	background-size: cover;
+	height: 700px;
+	width: 100%;
+}
+.text{
+	text-align: center;
+	margin-top: 10%;
+}
+
+.text h1:first-child{
+	color: white;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 35px;
+	line-height: 1px;
+}
+.selected{
+	color: #18CFAB;
+}
+
+.text .we{
+	font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 78px;
+	color: white;
+	line-height: 1px;
+}
+.enjoy{
+	font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 34px;
+line-height: 1px;
+color: #D4D4D4;
+}
+.buttons{
+	justify-content: center;
+	display: flex;
+	margin-top: 5%;
+}
+.explore{
+	padding: 15px 30px;
+	left: 0px;
+	top: 5px;
+	background: #18CFAB;
+	border-top: 5px white solid;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	outline: none;
+	margin-right: 10px;
+}
+.purchase{
+	padding: 15px 30px;
+	left: 0px;
+	top: 5px;
+	background: #00CBF6;
+	border-top: 5px white solid;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	outline: none;
+}
+
+.section3{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.section3 div{
+	padding: 60px 10px;
+	text-align: center;
+	flex: 1;
+}
+.section3 div img{
+	width: 50px;
+	height: 50px;
+}
+
+.section3{
+	text-transform: uppercase;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.section3 .first{
+	background-color: #1C2A33;
+	color: #00CBF6;
+}
+
+.section3 .second{
+	background-color: #00CBF6;
+	color: white;
+}
+
+.section4{
+	text-align: center;
+	justify-content: center;
+}
+
+
+.tab {
+	margin: auto;
+	width: 70%;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+	background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+	background-color: #00CBF6;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+	display: none;
+	border: 1px solid #ccc;
+	border-top: none;
+	width: 70%;
+	margin: auto;
+  }
+  .tabcontent img{
+	float: left;
+	width: 30%;
+	height:145px;
+  }
+
+  .section5{
+	margin-top: 50px;
+	text-align: center;
+	background-image: url('images/BG.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px 0px;
+  }
+  .section5 h1{
+	color: #18CFAB;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 40px;
+  }
+
+  .section5 p{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 40px;
+	color: #D8D8D8;
+  }
+
+  .section6 .boxes{
+	justify-content: center;
+	display: flex;
+	padding: 20px 50px;
+	flex-wrap: wrap;
+  }
+  .section6 .boxes div{
+	padding: 15px;
+	text-align: center;
+	width: 18%;
+  }
+
+  .section6 .boxes img{
+	width: 100%;
+  }
+
+  .section6 .boxes span{
+	font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+font-size: 13.991px;
+color: #777777;
+  }
+
+  .secton6 h1{
+	text-align: center;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 40px;
+	margin: auto;
+	color: #4E4E4E;
+  }
